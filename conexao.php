@@ -1,0 +1,18 @@
+<?php
+
+$host = "162.241.60.223";
+$user = "orvalh39_perfume";
+$pass = "Atecco@123";
+$dbname = "orvalh39_perfume";
+$port = 3306;
+
+try{
+    //Conexão com a porta
+    $conn = new PDO("mysql:host=$host;port=$port;dbname=" . $dbname, $user, $pass);
+
+   // Conexão sem a porta
+    $conn = new PDO("mysql:host=$host;dbname=" . $dbname, $user, $pass);
+   // echo "Conexão com banco de dados realizado com sucesso!";
+}catch(PDOException $err){
+    //echo "Erro: Conexão com banco de dados não realizado com sucesso. Erro gerado " . $err->getMessage();
+}

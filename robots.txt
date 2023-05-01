@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap:https://orvalhosj.com/sitemap.xml
+Sitemap:https://orvalhosj.com/sitemap_1.xml
